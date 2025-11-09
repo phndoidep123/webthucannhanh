@@ -1,0 +1,140 @@
+/* --- CSS TÙY CHỈNH CHO NÚT GIỎ HÀNG XÁC NHẬN --- */
+
+.cart-icon-submit-btn {
+  /* Đảm bảo nó là một khối để căn giữa và định kích thước */
+  display: flex;
+  flex-direction: column; /* Xếp SVG và chữ theo cột */
+  align-items: center;
+  justify-content: center;
+
+  /* Kích thước và hình dạng */
+  width: 80px; /* Kích thước nút */
+  height: 80px;
+  border-radius: 50%; /* Làm cho nút hình tròn */
+
+  /* Màu sắc */
+  background-color: #ffbe33; /* Màu vàng/cam */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+
+  /* Tùy chỉnh chữ và SVG */
+  color: #333; /* Màu chữ gần như đen */
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.cart-icon-submit-btn:hover {
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+  background-color: #ffc958;
+}
+
+/* Tùy chỉnh SVG bên trong */
+.cart-icon-submit-btn svg {
+  fill: #333; /* Tô màu cho SVG (thường là màu tối để nổi bật trên nền vàng) */
+  width: 30px; /* Kích thước biểu tượng */
+  height: 30px;
+}
+.nut-dat-ngay {
+  /* Màu nền: Dùng màu cam/vàng giống nút ĐẶT HÀNG ONLINE */
+  background-color: #ffc107; /* Có thể là màu #f5a623 hoặc #ffa000 tùy sắc độ chính xác */
+
+  /* Màu chữ */
+  color: white;
+
+  /* Chữ in hoa */
+  text-transform: uppercase;
+
+  /* Khoảng cách bên trong nút (padding) */
+  padding: 10px 20px;
+
+  /* Xóa viền mặc định của button/a */
+  border: none;
+
+  /* Bo góc */
+  border-radius: 20px;
+
+  /* Kích cỡ và độ đậm của chữ */
+  font-size: 14px;
+  font-weight: bold;
+
+  /* Con trỏ chuột thành dạng bàn tay (cho biết là một action) */
+  cursor: pointer;
+
+  /* (Tùy chọn) Hiệu ứng khi rê chuột qua */
+  transition: background-color 0.3s ease;
+}
+
+.nut-dat-ngay:hover {
+  background-color: #ffc107; /* Màu tối hơn khi rê chuột */
+}
+/* --- 1. Định kiểu cho Container --- */
+.khu-vuc-nut-hanh-dong {
+  /* Thiết lập Flexbox để các nút nằm trên một hàng */
+  display: flex;
+  /* Căn chỉnh các mục ở giữa theo chiều dọc */
+  align-items: center;
+  /* Tạo khoảng cách giữa các nút */
+  gap: 15px;
+  /* Tạo khoảng trống phía trên khu vực nút */
+  margin-top: 20px;
+}
+.nut-dat-ngay:hover {
+  background-color: #e68900; /* Màu tối hơn khi rê chuột */
+}
+/* --- 3. Định kiểu cho Nút QUAY LẠI (Phụ) --- */
+/* --- 1. Định kiểu cho Container --- */
+.khu-vuc-nut-hanh-dong {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* --- 2. Định kiểu CHUNG cho Cả Hai Nút --- */
+.nut-dat-ngay,
+.nut-quay-lai {
+  /* Màu nền: Dùng màu cam/vàng giống nút ĐẶT HÀNG ONLINE */
+  background-color: #ff9800;
+
+  /* Màu chữ */
+  color: white;
+
+  /* Chữ in hoa */
+  text-transform: uppercase;
+
+  /* Khoảng cách bên trong nút (padding) */
+  padding: 10px 20px;
+
+  /* Xóa viền mặc định của button/a */
+  border: none;
+
+  /* Bo góc */
+  border-radius: 4px;
+
+  /* Kích cỡ và độ đậm của chữ */
+  font-size: 14px;
+  font-weight: bold;
+
+  /* Con trỏ chuột thành dạng bàn tay */
+  cursor: pointer;
+
+  /* (Tùy chọn) Hiệu ứng khi rê chuột qua */
+  transition: background-color 0.3s ease;
+
+  /* Thiết lập Flexbox cho nội dung nút (cho icon và chữ) */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Căn giữa nội dung nếu nút rộng hơn */
+
+  /* Xóa gạch chân cho thẻ <a> (nếu dùng nút quay lại là <a>) */
+  text-decoration: none;
+}
+
+/* --- 3. Hiệu ứng HOVER cho Cả Hai Nút --- */
+.nut-quay-lai:hover {
+  background-color: #e68900; /* Màu tối hơn khi rê chuột */
+}
